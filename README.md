@@ -1,8 +1,8 @@
-# 🎓 Proyek Akhir: Menyelesaikan Permasalahan Dropout Mahasiswa di Perusahaan Edutech
+# 🎓 Proyek Akhir: Menyelesaikan Permasalahan Dropout Mahasiswa di Jaya Jaya Institut
 
 ## Business Understanding
 
-Perusahaan Edutech **Jaya Jaya Maju** berfokus pada peningkatan kualitas pendidikan tinggi dengan menyediakan platform pembelajaran online. Namun, perusahaan menghadapi masalah serius dengan tingginya angka *dropout* mahasiswa yang berdampak pada penurunan kepercayaan pengguna dan potensi kerugian pendapatan.
+Institut **Jaya Jaya** berfokus pada peningkatan kualitas pendidikan tinggi dengan menyediakan platform pembelajaran online. Namun, perusahaan menghadapi masalah serius dengan tingginya angka *dropout* mahasiswa yang berdampak pada penurunan kepercayaan pengguna dan potensi kerugian pendapatan.
 
 Tingkat *dropout* yang tinggi dapat berasal dari berbagai faktor seperti performa akademik, kondisi sosial ekonomi, dan keterlibatan mahasiswa dalam pembelajaran. Oleh karena itu, diperlukan pendekatan berbasis Machine Learning untuk mengidentifikasi mahasiswa yang berisiko tinggi *dropout* sejak dini.
 
@@ -49,7 +49,7 @@ Model Machine Learning dikembangkan menggunakan pipeline lengkap dan telah disim
 streamlit run app.py
 ```
 
-🔗 Akses Web App Prediksi Dropout
+🔗 Akses Streamlit App Prediksi Dropout : https://data-science-dashboard-dropout-institution.streamlit.app/
 
 ### Conclusion
 #### Model prediksi dropout berhasil dibangun dan menunjukkan performa tinggi dengan akurasi yang baik. Proyek ini mampu membantu perusahaan dalam:
