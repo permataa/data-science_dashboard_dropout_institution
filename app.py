@@ -20,7 +20,7 @@ st.set_page_config(
 )
 
 # Load model dan komponen
-@st.cache_resource
+@st.cache_data
 def load_artifacts():
     model = joblib.load('model/dropout_model.pkl')
     features = joblib.load('model/feature_columns.pkl')
