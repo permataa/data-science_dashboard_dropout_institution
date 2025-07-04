@@ -19,6 +19,9 @@ st.set_page_config(
     layout="wide"
 )
 
+# Clear cache
+st.cache_resource.clear()
+
 # Load model dan komponen
 @st.cache_data
 def load_artifacts():
