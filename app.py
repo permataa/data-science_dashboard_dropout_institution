@@ -15,12 +15,13 @@ import seaborn as sns
 st.set_page_config(page_title="Prediksi Dropout Mahasiswa", page_icon="🎓", layout="wide")
 
 # Load model dan feature columns
+@st.cache_resource
 def load_model():
+    st.write("Loading model...")
     model = joblib.load('model/dropout_model.pkl')
+    st.write("Loading feature columns...")
     feature_columns = joblib.load('model/feature_columns.pkl')
     return model, feature_columns
-
-model, feature_columns = load_model()
 
 # UI Utama
 st.title("🎓 Prediksi Risiko Dropout Mahasiswa")
