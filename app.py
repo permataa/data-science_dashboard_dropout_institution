@@ -25,8 +25,7 @@ st.cache_resource.clear()
 # Load model dan komponen
 @st.cache_data
 def load_artifacts():
-    model = joblib.load('model/dropout_model.pkl')
-    features = joblib.load('model/feature_columns.pkl')
+    model, features = joblib.load('model/dropout_model.pkl')
     return model, features
 
 model, feature_columns = load_artifacts()
