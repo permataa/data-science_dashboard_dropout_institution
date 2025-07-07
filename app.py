@@ -20,6 +20,7 @@ def load_model():
     model = joblib.load('model/dropout_model.pkl')
     feature_columns = joblib.load('model/feature_columns.pkl')
     return model, feature_columns
+model, feature_columns = load_model()
 
 # UI Utama
 st.title("🎓 Prediksi Risiko Dropout Mahasiswa")
