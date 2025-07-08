@@ -17,11 +17,17 @@ st.set_page_config(page_title="Prediksi Dropout Mahasiswa", page_icon="🎓", la
 # Load model dan feature columns
 @st.cache_resource
 def load_model():
-    st.write("Loading model...")
     model = joblib.load('model/dropout_model.pkl')
-    st.write("Loading feature columns...")
-    feature_columns = joblib.load('model/feature_columns.pkl')
-    return model, feature_columns
+    return model
+
+@st.cache_resource
+def load_features():
+    return joblib.load('model/feature_columns.pkl')
+
+# Inisialisasi global
+model = load_model()
+feature_columns = load_features()
+
 
 # UI Utama
 st.title("🎓 Prediksi Risiko Dropout Mahasiswa")
