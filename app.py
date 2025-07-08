@@ -12,10 +12,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-st.write(os.listdir("model"))
-
 # Konfigurasi halaman
 st.set_page_config(page_title="Prediksi Dropout Mahasiswa", page_icon="🎓", layout="wide")
+
+st.write(os.listdir("model"))
 
 # Load model dan feature columns
 @st.cache_resource
