@@ -10,6 +10,9 @@ import numpy as np
 import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
+
+st.write(os.listdir("model"))
 
 # Konfigurasi halaman
 st.set_page_config(page_title="Prediksi Dropout Mahasiswa", page_icon="🎓", layout="wide")
